@@ -12,48 +12,186 @@
       box-sizing: border-box;
     }
 
-    /* Body Styling */
     body {
-      font-family: 'Poppins', Arial, sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #1c1c1c, #343a40);
+      color: #f8f9fa;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
-    /* Header Styling */
     header {
-      background: #1f4068;
+      background: #0d6efd;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px 10px;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       letter-spacing: 2px;
     }
 
     header p {
-      font-size: 1.2rem;
       margin-top: 5px;
+      font-size: 1.2rem;
+      font-weight: 300;
     }
 
-    /* Section Styling */
     section {
       max-width: 1100px;
       margin: 20px auto;
       padding: 20px;
-      background: #162447;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background: #212529;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     section:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 20px rgba(0, 0, 0,
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 10px 0;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    ul li strong {
+      color: #f8f9fa;
+    }
+
+    .skills, .certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills span, .certifications span {
+      background: #0d6efd;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .skills span:hover, .certifications span:hover {
+      transform: scale(1.1);
+      background: #0056b3;
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Navin Kumar S</h1>
+  <p>Customer-Focused Support Engineer | SaaS Expert | Tech Enthusiast</p>
+</header>
+
+<section>
+  <h2>About</h2>
+  <p>Technical Support Specialist with 3.5+ years of experience in customer success, technical implementation, and support for SaaS products. Proficient in onboarding, API integrations, workflow automation, and resolving escalations. Adept at building client-centric solutions, collaborating with cross-functional teams, and driving product enhancements. Passionate about learning and applying emerging technologies.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>JavaScript</span>
+    <span>React JS</span>
+    <span>SQL</span>
+    <span>API</span>
+    <span>Networking</span>
+    <span>Workflow Automation</span>
+    <span>ServiceNow</span>
+    <span>JIRA</span>
+  </div>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+  <ul>
+    <li><strong>Client Account Manager - IDP Education Ltd. (2023 - 2024):</strong>
+      Onboarded and supported 50+ clients, customizing product implementations and optimizing CRM systems.
+    </li>
+    <li><strong>Product Specialist - Freshworks (2022 - 2023):</strong>
+      Delivered POCs and demos, reducing customer issues by 68%.
+    </li>
+    <li><strong>Assistant Systems Engineer - TCS (2020 - 2022):</strong>
+      Developed enterprise-grade solutions using ServiceNow APIs.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="certifications">
+    <span>ServiceNow Certified</span>
+    <span>Cloud Fundamentals</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Cube Satellite:</strong> Developed an interactive satellite module for upper atmosphere monitoring.</li>
+    <li><strong>Virtual Interface Robot:</strong> Designed a robot with AI-based face recognition and espionage capabilities.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:navinkumarspm@gmail.com">navinkumarspm@gmail.com</a></p>
+  <p>Phone: <a href="tel:+916380572511">+91 6380572511</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/thenameisnavin/" target="_blank">linkedin.com/in/thenameisnavin</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Navin Kumar S. All Rights Reserved.
+</footer>
+
+</body>
+</html>
 
