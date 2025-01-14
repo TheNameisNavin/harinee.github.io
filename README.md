@@ -1,2 +1,2 @@
-# harinee.github.io
-Harinee's professional website
+# navinresume.github.io
+
